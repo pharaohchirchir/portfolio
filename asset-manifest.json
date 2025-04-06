@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/myportfolio/static/css/main.44b3c94d.css",
+    "main.js": "/myportfolio/static/js/main.ff883427.js",
+    "static/media/profile.jpg": "/myportfolio/static/media/profile.764bf7aa0f555535ef3d.jpg",
+    "static/media/FiraCode-VF.woff": "/myportfolio/static/media/FiraCode-VF.d7af67f866f9a5e0a113.woff",
+    "static/media/FiraCode-Bold.woff": "/myportfolio/static/media/FiraCode-Bold.e3428b597c378e1fdcb0.woff",
+    "static/media/FiraCode-SemiBold.woff": "/myportfolio/static/media/FiraCode-SemiBold.4558fb863ac61e930234.woff",
+    "static/media/FiraCode-Regular.woff": "/myportfolio/static/media/FiraCode-Regular.a25d3a54ca0de3944eb7.woff",
+    "static/media/FiraCode-Light.woff": "/myportfolio/static/media/FiraCode-Light.a81da37f7831691b78df.woff",
+    "static/media/FiraCode-Medium.woff": "/myportfolio/static/media/FiraCode-Medium.97af194ae4a793b66f40.woff",
+    "static/media/FiraCode-VF.woff2": "/myportfolio/static/media/FiraCode-VF.7fef988ad994d5988ff3.woff2",
+    "static/media/FiraCode-Bold.woff2": "/myportfolio/static/media/FiraCode-Bold.abe3ab87cff86bb05610.woff2",
+    "static/media/FiraCode-SemiBold.woff2": "/myportfolio/static/media/FiraCode-SemiBold.564932952cfbb676de45.woff2",
+    "static/media/FiraCode-Regular.woff2": "/myportfolio/static/media/FiraCode-Regular.bf5ea52fa0094c7f7621.woff2",
+    "static/media/FiraCode-Light.woff2": "/myportfolio/static/media/FiraCode-Light.89b207dfa6dd890c3f41.woff2",
+    "static/media/FiraCode-Medium.woff2": "/myportfolio/static/media/FiraCode-Medium.1bc138a84f63b384c3f2.woff2",
+    "static/media/mssql.png": "/myportfolio/static/media/mssql.c108e54204a9473f3309.png",
+    "static/media/thinking.png": "/myportfolio/static/media/thinking.5576492585866fe9f773.png",
+    "static/media/postgres.png": "/myportfolio/static/media/postgres.2f2bd961fb45151843ba.png",
+    "static/media/communication.png": "/myportfolio/static/media/communication.e74db29e8d25667bd418.png",
+    "static/media/adaptability.png": "/myportfolio/static/media/adaptability.c14ebfd7d39e736bb7c3.png",
+    "static/media/teamwork.png": "/myportfolio/static/media/teamwork.f1343cfdcc4c8769c7af.png",
+    "static/media/r.png": "/myportfolio/static/media/r.1f012d5eba825a09c665.png",
+    "static/media/python.png": "/myportfolio/static/media/python.14a9fe046ce9b57d1e97.png",
+    "index.html": "/myportfolio/index.html",
+    "main.44b3c94d.css.map": "/myportfolio/static/css/main.44b3c94d.css.map",
+    "main.ff883427.js.map": "/myportfolio/static/js/main.ff883427.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44b3c94d.css",
+    "static/js/main.ff883427.js"
+  ]
+}
