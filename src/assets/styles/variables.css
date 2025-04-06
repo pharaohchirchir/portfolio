@@ -1,0 +1,44 @@
+:root {
+  /* 🎨 Color Palette */
+  --primary-color: #0077cc;
+  --primary-color-dark: #005fa3;
+  --secondary-color: #ff9800;
+  --background-light: #f8f9fa;
+  --background-dark: #1a1a1a;
+  --text-color: #333;
+  --text-color-light: #f0f0f0;
+  --border-color: #e0e0e0;
+  --card-bg: #ffffff;
+  --card-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  /* 📏 Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* 🔠 Typography */
+  --font-primary: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  /* New code font variables */
+  --font-code: 'Fira Code', monospace;
+  --font-code-vf: 'Fira Code VF', monospace;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.5rem;
+  --font-size-xl: 2.5rem;
+
+  /* 🧱 Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* 💡 Shadows */
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  /* 🕶 Transitions */
+  --transition-fast: 0.8s ease-in-out;
+  --transition-slow: 0.8s ease-in-out;
+}

@@ -1,0 +1,204 @@
+/* App.css */
+:root {
+  --primary-color: #007acc;
+  --secondary-color: #f5f5f5;
+  --text-color: #333;
+  --font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --header-height: 70px;
+  --mobile-breakpoint: 768px;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+/* Performance optimizations */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+}
+
+/* Responsive base font size */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Accessible link styling */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.25rem;
+  border-radius: 4px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+a:hover {
+  color: #005d99;
+}
+
+/* Mobile-first media queries */
+@media (min-width: 768px) {
+  :root {
+    --header-height: 80px;
+  }
+}
+
+/* Performance-focused animations */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+/* Responsive image handling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Touch-friendly elements */
+button,
+input,
+textarea {
+  font-size: 1rem;
+  touch-action: manipulation;
+}
+
+/* Content container for better mobile spacing */
+.main-content {
+  padding: 2rem 1rem;
+  min-height: calc(100vh - var(--header-height));
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Visually hidden utility class */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Font loading optimization */
+body {
+  font-display: swap;
+}
+
+/* Hardware acceleration for transforms */
+.hw-accelerate {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+body {
+  font-family: 'Fira Code', monospace;
+}
+
+/* FiraCode Light (Weight 300) */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/FiraCode/firacode/woff2/FiraCode-Light.woff2') format('woff2'),
+       url('./assets/fonts/FiraCode/firacode/woff/FiraCode-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* FiraCode Regular (Weight 400) */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/FiraCode/firacode/woff2/FiraCode-Regular.woff2') format('woff2'),
+       url('./assets/fonts/FiraCode/firacode/woff/FiraCode-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* FiraCode Medium (Weight 500) */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/FiraCode/firacode/woff2/FiraCode-Medium.woff2') format('woff2'),
+       url('./assets/fonts/FiraCode/firacode/woff/FiraCode-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* FiraCode SemiBold (Weight 600) */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/FiraCode/firacode/woff2/FiraCode-SemiBold.woff2') format('woff2'),
+       url('./assets/fonts/FiraCode/firacode/woff/FiraCode-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* FiraCode Bold (Weight 700) */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./assets/fonts/FiraCode/firacode/woff2/FiraCode-Bold.woff2') format('woff2'),
+       url('./assets/fonts/FiraCode/firacode/woff/FiraCode-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Optional: FiraCode Variable Font */
+@font-face {
+  font-family: 'Fira Code VF';
+  src: url('./assets/fonts/FiraCode/firacode/woff2/FiraCode-VF.woff2') format('woff2'),
+       url('./assets/fonts/FiraCode/firacode/woff/FiraCode-VF.woff') format('woff');
+  /* The variable font supports a range of weights, e.g. 100–700 */
+  font-weight: 100 700; 
+  font-style: normal;
+}
+

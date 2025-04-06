@@ -1,0 +1,225 @@
+/* ====== Base Reset & Font Setup ====== */
+@supports (font-variation-settings: normal) {
+  :root { 
+    font-family: 'Inter var', system-ui, -apple-system, sans-serif;
+  }
+}
+
+:root {
+  --light-color: #ffffff;
+  --dark-color: #1a1a1a;
+  --accent-color: #007acc;
+  --text-color: #333;
+  --header-height: 70px;
+  --mobile-breakpoint: 768px;
+}
+
+/* ====== Modern CSS Reset ====== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ====== Fluid Typography ====== */
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-color);
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+}
+
+/* ====== Enhanced Code & Data Display ====== */
+:not(pre) > code,
+pre,
+.data-snippet,
+kbd,
+samp {
+  --code-background: var(--dark-color);
+  --code-text: var(--light-color);
+  --code-accent: var(--accent-color);
+
+  font-family: 'Fira Code', 'Fira Mono', Menlo, Consolas, monospace;
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-variant-ligatures: contextual;
+  font-feature-settings: 'calt' 1;
+  background: var(--code-background);
+  color: var(--code-text);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--code-background) 80%, black);
+  container-type: inline-size;
+}
+
+pre {
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  tab-size: 2;
+  white-space: pre-wrap;
+  box-shadow: 0 2px 4px color-mix(in srgb, var(--code-background) 10%, transparent);
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) var(--dark-color);
+}
+
+/* Modern Scrollbars */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
+/* ====== Responsive Data Components ====== */
+.data-visualization {
+  margin: 2rem 0;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  container-type: inline-size;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  display: block;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid color-mix(in srgb, var(--dark-color) 10%, white);
+  min-width: 120px;
+}
+
+@container (max-width: 600px) {
+  .data-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .data-table tr {
+    display: contents;
+  }
+  
+  .data-table td,
+  .data-table th {
+    padding: 0.5rem;
+    border-bottom: none;
+    border-right: 1px solid color-mix(in srgb, var(--dark-color) 10%, white);
+  }
+}
+
+/* ====== Progressive Enhancement ====== */
+@media (prefers-reduced-data: reduce) {
+  * {
+    background-image: none !important;
+  }
+}
+
+/* ====== Mobile-First Responsive Design ====== */
+@media (max-width: 768px) {
+  body {
+    line-height: 1.5;
+  }
+
+  pre {
+    padding: 1rem;
+    margin: 1rem -1rem;
+    width: calc(100% + 2rem);
+    border-radius: 0;
+  }
+
+  .data-visualization {
+    margin: 1.5rem -1rem;
+    width: calc(100% + 2rem);
+    border-radius: 0;
+  }
+}
+
+/* ====== Modern Scroll Behavior ====== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  overscroll-behavior-y: contain;
+}
+
+/* ====== Print Optimization ====== */
+@media print {
+  :root {
+    --light-color: #fff;
+    --dark-color: #000;
+  }
+
+  body {
+    font-size: 12pt;
+    background: var(--light-color) !important;
+    color: var(--dark-color) !important;
+  }
+
+  .data-visualization {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  pre {
+    white-space: pre-wrap;
+  }
+}
+
+/* ====== Interaction States ====== */
+@media (hover: hover) {
+  a {
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: color-mix(in srgb, var(--primary-color) 80%, black);
+  }
+}
+
+/* ====== Performance Optimizations ====== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ====== Modern Utility Classes ====== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+}

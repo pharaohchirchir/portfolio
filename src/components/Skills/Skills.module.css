@@ -1,0 +1,72 @@
+.skills {
+  /* Container styling for the whole Skills section */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--background-light); /* Or any background color */
+}
+
+/* Each subsection (Technical or Soft) */
+.skillsSection {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* Section title styling */
+/* Section title styling for h2 */
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem; /* h2 font size */
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* Additional styling for h3 */
+.sectionSubtitle {
+  text-align: center;
+  font-size: 1.5rem; /* h3 font size */
+  margin-bottom: 0.75rem;
+  color: #444;
+}
+
+/* Skills list container */
+.skillsList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  padding: 6;
+  margin: 6;
+}
+
+/* Individual skill item (icon + label) */
+.skillItem {
+  background-color: #d2dfec;
+  padding: 1rem;
+  width: 140px;       /* Adjust as needed for your design */
+  height: 110px;     /* Adjust as needed for your design */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for skill cards */
+.skillItem:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling */
+.skillIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
