@@ -4,7 +4,7 @@ import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Blog from './components/Blog/Blog';
-import Contact from './components/Contact/Contact'; // Ensure Contact is wrapped with React.forwardRef
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
 
