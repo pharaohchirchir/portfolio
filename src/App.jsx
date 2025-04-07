@@ -4,12 +4,12 @@ import Hero from './components/Hero/Hero';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Blog from './components/Blog/Blog';
-import Contact from './components/Contact/Contact';
+import Contact from './components/Contact/Contact'; // Ensure Contact is wrapped with React.forwardRef
 import Footer from './components/Footer/Footer';
 import './App.css';
 
 const App = () => {
-  const contactRef = useRef();
+  const contactRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +18,7 @@ const App = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup
+    // Cleanup listener on unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
